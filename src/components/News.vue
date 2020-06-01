@@ -35,6 +35,9 @@ export default {
 .newsTop {
     margin: 0 115px 200px;
 }
+ul {
+    display: block;
+}
 li {
     text-align: left;
     line-height: 255%;

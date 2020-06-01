@@ -1,12 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import mainPage from './components/mainPage';
-import createLp from './components/createLp';
 import CheatPark from './components/CheatPark';
-import Blog from './components/Blog';
 import News from './components/News';
 import Company from './components/Company';
-import CompanyDetail from './components/CompanyDetail';
 import Service from './components/Service';
 import SystemDevelop from './components/SystemDevelop';
 import AppAndVr from './components/AppAndVr';
@@ -14,6 +11,7 @@ import WebDevelop from './components/WebDevelop';
 import Recruit from './components/Recruit';
 import Access from './components/Access';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import login from './components/login/login';
 import register from './components/login/register';
 import store from './store';
@@ -37,17 +35,6 @@ export default new Router({
             }
         },
         {
-            path: '/components/createLp',
-            component: createLp,
-            beforeEnter(to, from, next) {
-                if(store.getters.idToken) {
-                    next();
-                } else {
-                    next('/login');
-                }
-            }
-        },
-        {
             path: '/components/CheatPark',
             component: CheatPark,
             beforeEnter(to, from, next) {
@@ -58,18 +45,6 @@ export default new Router({
                 }
             }
         },     
-        {
-            path: '/components/Blog',
-            component: Blog,
-            beforeEnter(to, from, next) {
-                if(store.getters.idToken) {
-                    next();
-                } else {
-                    next('/login');
-                }
-            }
-        },
-
         {
             path: '/components/News',
             component: News,
@@ -84,17 +59,6 @@ export default new Router({
         {
             path: '/components/Company',
             component: Company,
-            beforeEnter(to, from, next) {
-                if(store.getters.idToken) {
-                    next();
-                } else {
-                    next('/login');
-                }
-            }
-        },
-        {
-            path: '/components/CompanyDetail',
-            component: CompanyDetail,
             beforeEnter(to, from, next) {
                 if(store.getters.idToken) {
                     next();
@@ -172,6 +136,17 @@ export default new Router({
         {
             path: '/components/Contact',
             component: Contact,
+            beforeEnter(to, from, next) {
+                if(store.getters.idToken) {
+                    next();
+                } else {
+                    next('/login');
+                }
+            }
+        },
+        {
+            path: '/components/Footer',
+            component: Footer,
             beforeEnter(to, from, next) {
                 if(store.getters.idToken) {
                     next();

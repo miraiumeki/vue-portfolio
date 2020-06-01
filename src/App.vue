@@ -2,14 +2,14 @@
   <div id="app">
     <header>
       <template v-if='isAuthenticated'>
-        <router-link to='/' class='header-item'>NEWS</router-link>
-        <router-link to='../components/CheatPark' class='header-item'>BLOG</router-link>
-        <router-link to='../components/CompanyDetail' class='header-item'>COMPANY</router-link>
-        <router-link to='/' class='header-item'>SERVICE</router-link>
-        <router-link to='/' class='header-item'>WORKS</router-link>
-        <router-link to='/' class='header-item'>RECRUIT</router-link>
-        <router-link to='/' class='header-item'>ACCESS</router-link>
-        <router-link to='../components/Contact' class='header-item'>CONTACT</router-link>
+        <router-link to='#' class='header-item'>NEWS</router-link>
+        <router-link to='#' class='header-item'>BLOG</router-link>
+        <router-link to='#' class='header-item'>COMPANY</router-link>
+        <router-link to='#' class='header-item'>SERVICE</router-link>
+        <router-link to='#' class='header-item'>WORKS</router-link>
+        <router-link to='#' class='header-item'>RECRUIT</router-link>
+        <router-link to='#' class='header-item'>ACCESS</router-link>
+        <router-link to='#' class='header-item'>CONTACT</router-link>
         <span class='header-item' @click='logout'>ログアウト</span>
       </template>
       <template v-if='!isAuthenticated'>
