@@ -1,67 +1,36 @@
 <template>
-  <div id="app">
-    <header>
-      <template v-if='isAuthenticated'>
-        <router-link to='#' class='header-item'>NEWS</router-link>
-        <router-link to='#' class='header-item'>BLOG</router-link>
-        <router-link to='#' class='header-item'>COMPANY</router-link>
-        <router-link to='#' class='header-item'>SERVICE</router-link>
-        <router-link to='#' class='header-item'>WORKS</router-link>
-        <router-link to='#' class='header-item'>RECRUIT</router-link>
-        <router-link to='#' class='header-item'>ACCESS</router-link>
-        <router-link to='#' class='header-item'>CONTACT</router-link>
-        <span class='header-item' @click='logout'>ログアウト</span>
-      </template>
-      <template v-if='!isAuthenticated'>
-        <router-link to='/login' class='header-item'>ログイン</router-link>
-        <router-link to='/register' class='header-item'>登録</router-link>
-      </template>
-    </header>
-    <router-view></router-view>
-  </div>
+  <v-app>
+    <AppHeader/>
+    <v-content>
+      <Home/>
+    </v-content>
+    <Footer/>
+  </v-app>
 </template>
 
 <script>
-export default {
-  computed: {
-    isAuthenticated() {
-      return this.$store.getters.idToken !== null;
-    }
-  },
-  methods: {
-    logout() {
-      this.$store.dispatch('logout');
+  // window.addEventListener("scroll", function() {
+  //   let scroll = window.pageYOffset;
+  //   if(scroll < 3200) {
+  //     document.body.style.backgroundColor = "#fff";
+  //   } else {
+  //     document.body.style.backgroundColor = "#01abcc";
+  //   }
+  // })
+
+  import AppHeader from './components/AppHeader.vue'
+  import Footer from './components/Footer.vue'
+  import Home from './components/Home.vue'
+ 
+  export default {
+    name: 'App',
+    components: {
+      AppHeader,
+      Home,
+      Footer
     }
   }
-}
 </script>
-
-<style>
-header {
-  padding-top: 20px;
-  text-align: right;
-  background-color: #333;
-}
-body {
-  margin: 0;
-}
-.header-item {
-  padding: 8px 16px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  text-decoration: none;
-}
-</style>
 <style scoped>
-#app {
-  margin-top: 0;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  position: relative;
-}
+/* @import "./css/style.css"; */
 </style>

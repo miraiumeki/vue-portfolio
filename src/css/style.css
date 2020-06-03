@@ -2,6 +2,7 @@
 .articleTitle,
 .articleSubTitle {
   color: #01abcc;
+  text-align: center;
 }
 .articleTitle-w,
 .articleSubTitle-w,
@@ -12,12 +13,12 @@
 .articleTitle,
 .articleTitle-w {
   font-size: 270%;
-  margin:0;
+  /* margin:0; */
 }
-.articleSubTitle,
+/* .articleSubTitle,
 .articleSubTitle-w {
   margin:0 auto 5%;
-}
+} */
 li {
     list-style: none;
 }
@@ -28,9 +29,9 @@ li {
   font-size: 2.5rem;
 }
 .serviceIndex {
-  font-size: 4.5rem;
+  font-size: 4rem;
   position: relative;
-  top: 110px;
+  top: 50px;
   left: 35px;
   font-weight: 900;
   color: #fff;
@@ -43,8 +44,8 @@ li {
 .service,
 .webDevelop {
   width:80%;
-  margin: 65px auto -50px;
-  text-align: left;
+  margin: auto;
+  /* text-align: left; */
 }
 .serviceDevelopment img,
 .webDevelop img {

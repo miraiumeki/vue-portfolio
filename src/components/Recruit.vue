@@ -1,33 +1,38 @@
 <template>
-    <div class="recruit">
-        <h1 class="articleTitle-w">RECRUIT</h1>
-        <p class="articleSubTitle-w">採用情報</p>
-        <div class="recruitInfo">
-            <div class="page">
-                <p class="text">採用特設ページ公開中</p>
-                <img src="@/assets/logo_white.svg" class="engageLogo" alt="engageロゴ">
-            </div>
-            <div class="companyName">
-                <div class="cheatLogo">
-                    <img src="@/assets/ダウンロード.png" alt="cheatLogo画像">
-                </div>
-                <p>株式会社CHEAT</p>
-            </div>
-            <h1>career at 株式会社CHEAT私たちと一緒に働きませんか？</h1>
-            <div class="recruitNow">
-                <div>
-                    現在<span>3</span>職種募集中：フロントエンジニア／各種WEBサー
-                </div>
-                <button>今すぐチェック！＞</button>
-            </div>
-        </div>
-    </div>
+    <section class="home-recruit">
+        <v-container fluid class="light-green darken-1 home-recruit__content">
+            <v-row>
+                <v-col class="home-recruit__content-text text-center">
+                    <h1 class="articleTitle-w">RECRUIT</h1>
+                    <p class="articleSubTitle-w">採用情報</p>
+                    <div class="recruitInfo">
+                        <div class="page">
+                            <p class="text">採用特設ページ公開中</p>
+                            <img src="@/assets/logo_white.svg" class="engageLogo" alt="engageロゴ">
+                        </div>
+                        <div class="companyName">
+                            <div class="cheatLogo">
+                                <img src="@/assets/ダウンロード.png" alt="cheatLogo画像">
+                            </div>
+                            <p>株式会社CHEAT</p>
+                        </div>
+                        <h1>career at 株式会社CHEAT私たちと一緒に働きませんか？</h1>
+                        <div class="recruitNow">
+                            <div>
+                                現在<span>3</span>職種募集中：フロントエンジニア／各種WEBサー
+                            </div>
+                            <button>今すぐチェック！＞</button>
+                        </div>
+                    </div>
+                </v-col>
+            </v-row>
+        </v-container>
+    </section>
+
 </template>
-<style scoped>
-@import "../css/style.css";
-.recruit {
-    margin-bottom: 160px;
-}
+<style lang="scss" scoped>
+ @import "../css/style.css";
+.home-recruit__content-text {
 .page {
     background-color: #01abcc;
     position: relative;
@@ -38,7 +43,8 @@
 }
 .page img {
     position: absolute;
-    right: 5px;
+    right: 10px;
+    top: 5px;
 }
 .recruitInfo {
     background-color: pink;
@@ -94,7 +100,7 @@
     background-color: #f7f7f7;
     position: absolute;
     bottom: 0;
-    width: 96.1%;
+    width: 100%;
 }
 .recruitNow div {
     width: 300px;
@@ -113,6 +119,7 @@
     border-radius: 5px;
     padding: 5px 10px;
     font-size: 10px;
+}
 }
 </style>
 

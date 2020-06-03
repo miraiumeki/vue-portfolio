@@ -1,44 +1,36 @@
 <template>
-    <div>
-      <div class="mainImage">
-        <img src="@/assets/main_object.png" class="topMainImg" alt="メイン画像">
-        <img src="@/assets/main_logo_large.png" class="topMainOnImg" alt="メイン画像上の画像">
-      </div>
-      <div class="toCreateLp">
-        <router-link to='../components/createLp'>
-          <img src="@/assets/lp_banner.png" class="advertisement" alt="広告の画像">
-        </router-link>
-      </div>
-    </div>
+  <section class="home-hero">
+    <v-container fluid fill-height class="home-hero__content">
+      <v-row>
+        <v-col class="home-hero__content-text">
+          <p>Welcome to my website.</p>
+          <p>I'm a enginner.</p>
+        </v-col>
+      </v-row>
+    </v-container>
+  </section>
 </template>
+<style  lang="scss" scoped>
+.home-hero__content {
+  background: url("~@/assets/bg_main.png");
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 50vh;
 
-<style scoped>
-.mainImage {
-  margin-bottom: -10%;
-  position: absolute;
-  top:0;
-  z-index: -1;
-}
-.topMainImg {
-  width: 100%;
-  height: auto;
-  display: block;
-  background: no-repeat url("~@/assets/bg_main.png");
-}
-.topMainOnImg {
-  position: absolute;
-  top:45px;
-  left: 0;
-  width: 100%;
-}
-.toCreateLp {
-  position: relative;
-}
-.advertisement {
-  width: 880px;
-  position: absolute;
-  top: -450px;
-  left: 200px;
-  cursor: pointer;
+ @include display_pc {
+    height: 100vh;
+  }
+
+  &-text {
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  @include display_pc {
+      font-size: 40px;
+    }
 }
 </style>

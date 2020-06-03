@@ -4,6 +4,7 @@ import axios from 'axios'
 import router from './router'
 import store from './store'
 import * as VueGoogleMaps from 'vue2-google-maps'
+import vuetify from './plugins/vuetify';
 
 
 
@@ -24,7 +25,8 @@ store.dispatch('autoLogin').then(() => {
   new Vue({
     router,
     store,
-    render: h => h(App),
+    vuetify,
+    render: h => h(App)
   }).$mount('#app')
 })
 
