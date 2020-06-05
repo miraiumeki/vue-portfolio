@@ -71,7 +71,9 @@ export default {
     display: none !important;
   }
 }
- 
+.v-tabs-bar__content {
+  justify-content: space-between;
+}
 .v-tabs {
   display: none;
  

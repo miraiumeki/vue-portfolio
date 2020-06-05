@@ -3,11 +3,11 @@
         <v-container fluid class="light-green darken-1 home-recruit__content">
             <v-row>
                 <v-col class="home-recruit__content-text text-center">
-                    <h1 class="articleTitle-w">RECRUIT</h1>
-                    <p class="articleSubTitle-w">採用情報</p>
+                    <h1 class="articleTitle-w fontColorWhite">RECRUIT</h1>
+                    <p class="articleSubTitle-w fontColorWhite">採用情報</p>
                     <div class="recruitInfo">
                         <div class="page">
-                            <p class="text">採用特設ページ公開中</p>
+                            <p class="text fontColorWhite">採用特設ページ公開中</p>
                             <img src="@/assets/logo_white.svg" class="engageLogo" alt="engageロゴ">
                         </div>
                         <div class="companyName">
@@ -31,10 +31,9 @@
 
 </template>
 <style lang="scss" scoped>
- @import "../css/style.css";
+//  @import "../css/style.scss";
 .home-recruit__content-text {
 .page {
-    background-color: #01abcc;
     position: relative;
 }
 .text {
@@ -47,8 +46,7 @@
     top: 5px;
 }
 .recruitInfo {
-    background-color: pink;
-    width: 40%;
+    width: 100%;
     margin: 0 auto;
     background-image: url(../assets/main_object.png),url("../assets/bg_main.png");
     background-repeat: no-repeat;
@@ -56,6 +54,9 @@
     background-position: top;
     height: 350px;
     position: relative;
+     @include display_pc {
+        width: 40%;
+  }
 }
 .engageLogo {
     width: 45px;
@@ -91,7 +92,8 @@
     padding: 5px 20px;
     margin: 0;
     position: absolute;
-    bottom: 56px;
+    bottom: 55px;
+    width: 100%;
 }
 .recruitNow {
     display: flex;
@@ -106,7 +108,10 @@
     width: 300px;
     font-size: 12px;
     margin-right: 20px;
-    line-height: 3;
+    line-height: normal;
+        @include display_pc {
+            line-height: 3;
+  }
 }
 .recruitNow span {
     color: #f70;

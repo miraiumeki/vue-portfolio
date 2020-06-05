@@ -32,5 +32,5 @@
   }
 </script>
 <style scoped>
-/* @import "./css/style.css"; */
+@import "./styles/common/common.scss";
 </style>

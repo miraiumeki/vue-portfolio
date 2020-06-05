@@ -6,3 +6,43 @@ a {
   width: 340px;
   cursor: pointer;
 }
+.articleTitle,
+.articleSubTitle {
+  color: #01abcc;
+  text-align: center;
+}
+.articleTitle,
+.articleTitle-w {
+  font-size: 270%;
+}
+li {
+    list-style: none;
+}
+.fontColorWhite {
+  color: #fff;
+}
+.fontSize {
+  font-size: 1.5rem;
+  @include display_pc {
+    font-size: 2.5rem;
+  }
+}
+.serviceIndex {
+  font-size: 2rem;
+  margin-bottom: 20px; 
+  font-weight: 900;
+}
+.serviceTitle {
+  font-size: 1.3rem; 
+  margin: 20px 0;
+}
+.serviceFont {
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+.serviceDevelopment,
+.service,
+.webDevelop {
+    width:80%;
+    margin: auto;
+}
