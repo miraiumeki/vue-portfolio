@@ -4,7 +4,7 @@
       <v-row>
         <v-col class="home-hero__content-text">
           <p>Welcome to my website.</p>
-          <p>I'm a enginner.</p>
+          <p>Thank you.</p>
         </v-col>
       </v-row>
     </v-container>
@@ -12,7 +12,7 @@
 </template>
 <style  lang="scss" scoped>
 .home-hero__content {
-  background: url("~@/assets/bg_main.png");
+  background: url("~@/assets/forest.jpg");
   background-size: cover;
   background-position: center center;
   width: 100%;

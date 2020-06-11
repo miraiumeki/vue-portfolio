@@ -4,20 +4,7 @@ import colors from 'vuetify/lib/util/colors'
 
 Vue.use(Vuetify);
 
-// window.addEventListener("scroll", function() {
-//   let scroll = window.pageYOffset;
-//   if(scroll < 3200) {
-//     document.body.style.backgroundColor = "#fff";
-//   } else {
-//     document.body.style.backgroundColor = "#01abcc";
-//   }
-// })
-
-
 export default new Vuetify({
-  // theme: {
-  //   dark: true,
-  // }
   theme: {
     themes: {
       light: {

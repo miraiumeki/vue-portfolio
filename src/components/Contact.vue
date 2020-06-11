@@ -13,31 +13,31 @@
                     <v-form action="#" method="post">
                         <div>
                             <label for="name">お名前<span>(必須)</span></label>
-                            <input type="text" id="name">
+                            <input name="myinput" type="text" id="name">
                         </div>
                         <div>
                             <label for="email">メールアドレス<span>(必須)</span></label>
-                            <input type="text" id="email">
+                                <input name="email" type="text" id="email">
                         </div>
                         <div>
                             <label for="radio">お問合せ区分<span>(必須)</span></label>
                             <div class="radio-btn">
-                                <p>
-                                    <input type="radio" name="content" id="content1">
-                                    <label for="content1">システム開発のご依頼・ご相談</label>
-                                </p>
-                                <p>
-                                    <input type="radio" name="content" id="content2">
-                                    <label for="content2">Web制作のご依頼・ご相談</label>
-                                </p>
-                                <p>
-                                    <input type="radio" name="content" id="content3">
-                                    <label for="content3">VRコンテンツ制作のご依頼・ご相談</label>
-                                </p>
-                                <p>
-                                    <input type="radio" name="content" id="content4">
-                                    <label for="content4">その他</label>
-                                </p>
+                                    <p>
+                                        <input type="radio" name="content" id="content1">
+                                        <label for="content1">システム開発のご依頼・ご相談</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" name="content" id="content2">
+                                        <label for="content2">Web制作のご依頼・ご相談</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" name="content" id="content3">
+                                        <label for="content3">VRコンテンツ制作のご依頼・ご相談</label>
+                                    </p>
+                                    <p>
+                                        <input type="radio" name="content" id="content4">
+                                        <label for="content4">その他</label>
+                                    </p>
                             </div>
                         </div>
                         <div>
@@ -53,7 +53,8 @@
         </v-container>
     </section>
 </template>
-
+<script>
+</script>
 <style lang="scss" scoped>
 .home-contact__content-text {
     padding-bottom: 100px;

@@ -2,39 +2,39 @@ export default {
   menuItems: [
     {
       name: 'TOP',
-      url: '#'
-    },
-    {
-      name: 'NEWS',
-      url: '#'
+      url: '#top'
     },
     {
       name: 'BLOG',
-      url: '#'
+      url: '#blog'
+    },
+    {
+      name: 'NEWS',
+      url: '#news'
     },
     {
       name: 'COMPANY',
-      url: '#'
+      url: '#company'
     },
     {
       name: 'SERVICE',
-      url: '#'
+      url: '#service'
     },
-    {
-      name: 'WORKS',
-      url: '#'
-    },
+    // {
+    //   name: 'WORKS',
+    //   url: '#'
+    // },
     {
       name: 'RECRUIT',
-      url: '#'
+      url: '#recruit'
     },
     {
       name: 'ACCESS',
-      url: '#'
+      url: '#access'
     },
-    {
-      name: 'CONTACT',
-      url: '#'
-    }
+    // {
+    //   name: 'CONTACT',
+    //   url: '#'
+    // }
   ]
 }

@@ -8,7 +8,7 @@ a {
 }
 .articleTitle,
 .articleSubTitle {
-  color: #01abcc;
+  color:#fc0;
   text-align: center;
 }
 .articleTitle,
@@ -40,9 +40,10 @@ li {
   line-height: 1.5;
   font-size: 1.5rem;
 }
-.serviceDevelopment,
-.service,
-.webDevelop {
-    width:80%;
-    margin: auto;
+.contents-display {
+  opacity: 0;
+}
+.move {
+  opacity: 1;
+  transition: 3.0s;
 }
