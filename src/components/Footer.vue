@@ -4,7 +4,7 @@
      dark
      absolute>
     <p class="footer-copyright">
-      Ⓒ2018 CHEAT INC. All rights reserved.
+      Ⓒ2018 Dammy INC. All rights reserved.
     </p>
   </v-footer>
 </template>

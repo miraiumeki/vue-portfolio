@@ -8,8 +8,8 @@
               <p class="articleSubTitle-w">会社概要</p>
               <h1>ダミーダミーダミーダミーダミーダミーダミー</h1>
               <p class="mt-8">ダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミーダミー</p>
-              <v-chip x-large color="secondary" class="btn d-block text-center">
-                <a href="#">
+              <v-chip x-large color="red lighten-3" class="btn d-block text-center">
+                <a href="#" class="white--text text--lighten-1">
                   会社概要を見る
                 </a>
               </v-chip>

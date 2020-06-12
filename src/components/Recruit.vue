@@ -1,10 +1,10 @@
 <template>
     <section>
-        <v-container fluid class="light-green darken-1 contents-display" :class="{ 'move': scrollY > 6000 }">
+        <v-container fluid class="contents-display" :class="{ 'move': scrollY > 6000 }">
             <v-row>
-                <v-col class="text-center fontColorWhite">
-                    <h1 class="articleTitle-w">RECRUIT</h1>
-                    <p class="articleSubTitle-w">採用情報</p>
+                <v-col class="text-center">
+                    <h1 class="articleTitle">RECRUIT</h1>
+                    <p class="articleSubTitle">採用情報</p>
                     <div class="service d-lg-flex justify-lg-center">
                         <!-- <div class="fontColorWhite"> -->
                         <v-img
@@ -13,7 +13,7 @@
                         >
                         </v-img>
 
-                        <table class="recruitInfo-detail pr-6 text-left">
+                        <table class="recruitInfo-detail pl-6 text-left">
                             <tr>
                                 <td class="px-lg-8">募集職種</td>
                                 <td>ダミーダミーダミーダミーダミーダミー</td>

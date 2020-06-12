@@ -1,5 +1,5 @@
 <template>
-  <v-container :class="{ 'move': scrollY > 800 }" class="contents-display">
+  <v-container class="contents-display" :class="{ 'move': scrollY > 800 }">
     <v-layout text-xs-center mt-5 px-3 py-3 home-news__content-text>
       <v-flex xs12>
         <h1 class="articleTitle">NEWS</h1>
@@ -26,7 +26,7 @@
       <v-flex xs12>
         <p class="headline font-weight mt-2">2020.03.30</p>
         <p class="title font-weight-thin mt-3">
-            【キャンセル・払い戻しについて】<br>詳しくは<a href="#" class="orange--text text--lighten-1">こちら</a>からご確認ください。
+            【キャンセル・払い戻しについて】<br>詳しくは<a href="#" class="red--text text--lighten-1">こちら</a>からご確認ください。
         </p>
       </v-flex>
     </v-layout>
@@ -34,7 +34,7 @@
       <v-flex xs12>
         <p class="headline font-weight mt-2">2020.02.09</p>
         <p class="title font-weight-thin mt-3">
-            <a href="#" class="orange--text text--lighten-1">写真</a>をアップしました。
+            <a href="#" class="red--text text--lighten-1">写真</a>をアップしました。
         </p>
       </v-flex>
     </v-layout>

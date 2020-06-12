@@ -1,15 +1,15 @@
 <template>
     <section>
-        <v-container fluid class="deep-purple lighten-3 contents-display" :class="{ 'move': scrollY > 2000 }">
+        <v-container fluid :class="{ 'move': scrollY > 2000 }">
             <v-row class="service">
                 <v-col class="d-lg-flex justify-lg-center">
                     <div class="service-img">
                         <v-img src="@/assets/destination.jpg"></v-img>
                     </div>
-                    <div class="pt-3 pl-lg-7 fontColorWhite">
-                        <h1 class="articleTitle-w">SERVICE</h1>
-                        <p class="articleSubTitle-w">サービス一覧</p>
-                        <p class="fontSize fontColorWhite">恥の多い生涯を送って来ました。自分には、人間の生活というものが、見当つかないのです。自分は東北の田舎</p>
+                    <div class="pt-3 pl-lg-7">
+                        <h1 class="articleTitle">SERVICE</h1>
+                        <p class="articleSubTitle">サービス一覧</p>
+                        <p class="fontSize">恥の多い生涯を送って来ました。自分には、人間の生活というものが、見当つかないのです。自分は東北の田舎</p>
                     </div>
                 </v-col>
             </v-row>

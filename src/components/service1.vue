@@ -1,9 +1,9 @@
 <template>
     <section>
-        <v-container fluid class="blue lighten-4 contents-display" :class="{ 'move': scrollY > 2500 }">
+        <v-container fluid class="red lighten-5 contents-display" :class="{ 'move': scrollY > 2500 }">
             <v-row>
             <v-col>
-                <div class="service fontColorWhite">
+                <div class="service">
                     <h1 class="serviceIndex">overseas travelling</h1>
                     <v-img src="@/assets/desert.jpg"></v-img>
                     <h1 class="serviceTitle headline">海外旅行</h1>

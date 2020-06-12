@@ -61,4 +61,7 @@ export default {
 .home {
   padding-bottom: 50px;
 }
+#blog {
+  background-color: #FFEBEE;
+}
 </style>
