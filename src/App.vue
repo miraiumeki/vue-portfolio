@@ -22,6 +22,9 @@
     }
   }
 </script>
-<style scoped>
+<style>
 @import "./styles/common/common.scss";
+.v-application--wrap {
+  min-height: auto;
+}
 </style>

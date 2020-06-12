@@ -1,6 +1,6 @@
 <template>
     <section>
-        <v-container fluid :class="{ 'move': scrollY > 2000 }">
+        <v-container fluid :class="{ 'move': scrollY > 2000 }" class="contents-display" >
             <v-row class="service">
                 <v-col class="d-lg-flex justify-lg-center">
                     <div class="service-img">

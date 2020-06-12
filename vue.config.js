@@ -1,7 +1,6 @@
 module.exports = {
   transpileDependencies: [
-    'vuetify',
-    'VueScrollmagic'
+    'vuetify'
   ],
   css: {
     loaderOptions: {
