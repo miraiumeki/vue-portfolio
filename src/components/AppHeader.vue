@@ -7,7 +7,11 @@
         dark
       >
         <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
-        <v-toolbar-title>MyPortfolioSite</v-toolbar-title>
+        <v-toolbar-title>
+          <a v-bind="top">
+            MyPortfolioSite
+          </a>
+        </v-toolbar-title>
          <v-tabs>
           <!-- <v-tab
           > -->
@@ -83,6 +87,9 @@ export default {
 .v-toolbar__title {
   overflow: visible !important;
   margin-right: 50px !important;
+  a{
+    color: #fff;
+  }
 }
 .v-app-bar__nav-icon {
   @include display_pc {

@@ -1,6 +1,6 @@
 <template>
     <section>
-        <v-container fluid :class="{ 'move': scrollY > 2000 }" class="contents-display" >
+        <v-container fluid :class="{ 'move': scrollY > 2000}" class="contents-display" >
             <v-row class="service">
                 <v-col class="d-lg-flex justify-lg-center">
                     <div class="service-img">
@@ -28,7 +28,8 @@ export default {
   },
   methods: {
     handleScroll() {
-      this.scrollY = window.scrollY
+      const reScroll = 100;
+      this.scrollY = window.scrollY-reScroll;
     }
 }
 }

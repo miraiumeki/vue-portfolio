@@ -1,6 +1,6 @@
 <template>
     <section>
-        <v-container fluid class="contents-display" :class="{ 'move': scrollY > 6000 }">
+        <v-container fluid class="contents-display" :class="{ 'move': scrollY > 5700 }">
             <v-row>
                 <v-col class="text-center">
                     <h1 class="articleTitle">RECRUIT</h1>

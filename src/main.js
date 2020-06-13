@@ -12,7 +12,7 @@ Vue.use(VueGoogleMaps, {
   }
 })
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
   new Vue({
     vuetify,

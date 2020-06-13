@@ -61,6 +61,20 @@ export default {
 .home {
   padding-bottom: 50px;
 }
+#top,
+#blog,
+#news,
+#company,
+#service,
+#recruit,
+#access {
+  margin-top: -55px;
+  padding-top: 55px;
+    @include display_pc {
+      margin-top: -65px;
+      padding-top: 65px;
+  }
+}
 #blog {
   background-color: #FFEBEE;
 }
