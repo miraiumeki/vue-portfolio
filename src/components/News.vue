@@ -44,7 +44,6 @@
 export default {
     data() {
         return {
-            url: "#",
             show: true,
             scrollY: 0
         }
@@ -69,9 +68,6 @@ export default {
     }
     li p:first-child {
         font-weight: bold;
-    }
-    a {
-        color: #00d1b2;
     }
 }
 </style>

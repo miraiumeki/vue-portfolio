@@ -6,13 +6,7 @@
                     <h1 class="articleTitle">RECRUIT</h1>
                     <p class="articleSubTitle">採用情報</p>
                     <div class="service d-lg-flex justify-lg-center">
-                        <!-- <div class="fontColorWhite"> -->
-                        <v-img
-                        src="@/assets/work.jpg"
-                        class="recruitInfo-img"
-                        >
-                        </v-img>
-
+                        <v-img src="@/assets/work.jpg" class="recruitInfo-img"></v-img>
                         <table class="recruitInfo-detail pl-6 text-left">
                             <tr>
                                 <td class="px-lg-8">募集職種</td>
@@ -33,7 +27,6 @@
                                 </td>
                             </tr>
                         </table>
-                        <!-- </div> -->
                     </div>
                 </v-col>
             </v-row>

@@ -1,11 +1,7 @@
 <template>
   <v-app>
-    <!-- ここにヘッダーをコーディング -->
     <header>
-      <v-app-bar
-        app
-        dark
-      >
+      <v-app-bar app dark>
         <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
         <v-toolbar-title>
           <a v-bind="top">
@@ -13,8 +9,6 @@
           </a>
         </v-toolbar-title>
          <v-tabs>
-          <!-- <v-tab
-          > -->
           <a v-bind="top">TOP</a>
           <a v-bind="blog">BLOG</a>
           <a v-bind="news">NEWS</a>
@@ -22,30 +16,17 @@
           <a v-bind="service">SERVICE</a>
           <a v-bind="recruit">RECRUIT</a>
           <a v-bind="access">ACCESS</a>
-          <!-- </v-tab> -->
         </v-tabs>
       </v-app-bar>
-      <v-navigation-drawer
-        v-model="drawer"
-        fixed
-        temporary
-      >
-        <v-list
-          nav
-          dense
-        >
-          <!-- <v-list-item-group>
-            <v-list-item
-                > -->
-                  <a v-bind="top">TOP</a>
-                  <a v-bind="blog">BLOG</a>
-                  <a v-bind="news">NEWS</a>
-                  <a v-bind="company">COMPANY</a>
-                  <a v-bind="service">SERVICE</a>
-                  <a v-bind="recruit">RECRUIT</a>
-                  <a v-bind="access">ACCESS</a>
-            <!-- </v-list-item>
-          </v-list-item-group> -->
+      <v-navigation-drawer v-model="drawer" fixed temporary>
+        <v-list nav dense>
+          <a v-bind="top">TOP</a>
+          <a v-bind="blog">BLOG</a>
+          <a v-bind="news">NEWS</a>
+          <a v-bind="company">COMPANY</a>
+          <a v-bind="service">SERVICE</a>
+          <a v-bind="recruit">RECRUIT</a>
+          <a v-bind="access">ACCESS</a>
         </v-list>
       </v-navigation-drawer>
     </header>

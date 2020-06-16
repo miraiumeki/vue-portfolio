@@ -8,7 +8,7 @@
     </p>
   </v-footer>
 </template>
-<style type = text/css>
+<style scoped>
   .footer-copyright {
     margin: auto;
     padding: 15px 0 0;

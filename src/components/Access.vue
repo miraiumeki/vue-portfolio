@@ -1,5 +1,5 @@
 <template>
-    <section class="red lighten-5 home-access">
+  <section class="red lighten-5 home-access">
     <v-container fluid class="contents-display" :class="{ 'move': scrollY > 6500 }">
       <v-row>
         <v-col class="text-center">
